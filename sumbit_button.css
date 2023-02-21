@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Anek+Telugu:wght@300;400;500;600&display=swap');
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: #14213d;
+}
+
+.btn1 {
+    width: 150px;
+    font-family: 'Anek Telugu', sans-serif;
+    font-weight: 600;
+    font-size: medium;
+    text-transform: uppercase;
+    padding-top: 8px;
+    margin-bottom: 20px;
+    color: #ffd60a;
+    background: #0077b6;
+    border: 1px solid #ffd60a;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px #0077b6;
+}
+
+.btn1:hover,
+.btn1:focus,
+.btn1:active {
+    transition: 1s;
+    border: none;
+    text-transform: uppercase;
+    background: #ffd60a;
+    color: #0077b6;
+    border: 1px solid #0077b6;
+    transform: translateY(-0.25em);
+    cursor: pointer;
+}
+
+.btn2 {
+    width: 150px;
+    font-family: 'Anek Telugu', sans-serif;
+    font-weight: 600;
+    font-size: medium;
+    text-transform: lowercase;
+    padding-top: 8px;
+    margin-bottom: 20px;
+    color: #fff;
+    background: none;
+    border: 1px solid #fff;
+}
+
+.btn2:hover {
+    background: linear-gradient(95deg, #e9ecef, #ffffff);
+    text-transform: uppercase;
+    color: #14213d;
+    transform: translateY(-0.25em);
+}
+
+.btn3 {
+    width: 150px;
+    font-family: 'Anek Telugu', sans-serif;
+    font-weight: 600;
+    font-size: medium;
+    padding-top: 8px;
+    margin-bottom: 20px;
+    background: linear-gradient(45deg, #e56b6f, #6d597a);
+    border: none;
+    box-shadow: 1px 1px 1px #c7f9cc;
+    color: #c7f9cc;
+}
+
+.btn3:focus,
+.btn3:hover {
+    transition: .5s;
+    transform: translate(0.25em, 0.20em);
+}
+
+.btn4 {
+    width: 150px;
+    font-family: 'Anek Telugu', sans-serif;
+    font-weight: 600;
+    font-size: medium;
+    text-transform: uppercase;
+    padding-top: 8px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    background: #9b5de5;
+    color: #f15bb5;
+    border: 1px solid #9b5de5;
+}
+
+.btn4:hover {
+    border-radius: 1px;
+    background: #00bbf9;
+    color: #fee440;
+    text-transform: lowercase;
+    border: none;
+    border-bottom: 5px solid #9b5de5;
+    border-left: 5px solid #9b5de5;
+    border-top: 5px solid #f15bb5;
+    border-right: 5px solid #f15bb5;
+}
