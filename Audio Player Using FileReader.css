@@ -1,0 +1,65 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+body{
+	display: flex;
+	min-height: 100vh;
+	justify-content: center;
+	align-items: center;
+	/* background: rgb(170,100,105); */
+	background: #bcd;
+	padding: 0 20px;
+	flex-flow: column;
+}
+.container{
+	width: min(100%,600px);
+	padding: 30px;
+	box-shadow: 1px 1px 10px rgba(0,0,0,.3),
+				-1px -1px 10px rgba(255,255,255,.2);
+}
+.container h2{
+	padding: 20px 0;
+	text-align: center;
+}
+.container form div label{
+	display: block;
+	padding: 20px 0;
+	/* background: #abcd; */
+	padding: 20px;
+	/* color: #fff; */
+	font-size: 1.2rem;
+	letter-spacing: .1em;
+	transition: all .1s;
+	cursor: pointer;
+	box-shadow: inset 1px 1px 10px rgba(0,0,0,.3),
+				inset -1px -1px 10px rgba(255,255,255,.2);
+  word-break: break-all;
+}
+.container form div label:active,
+button:active{
+	transform: scale(.9);
+}
+.container form div label input{
+	display: none;
+}
+button{
+	width: 100%;
+	padding: 20px 0;
+	margin-top: 4%;
+	outline: none;
+	border: none;
+	background: #200;
+	color: #fff;
+	font-size: 1.2rem;
+	transition: all .2s;
+	cursor: pointer;
+}
+audio{
+	width: 400px;
+	position: absolute;
+	top: 30px;
+	left: 50%;
+	transform: translate(-50%,-50%);
+}
