@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Practice</title>
+	<link rel = 'stylesheet' href = 'style.css'/>
+	<link rel = 'stylesheet' href = './font/css/all.css' />
+	<meta name = 'viewport' content = 'width=device-width'/>
+</head>
+	<body>
+		<div class = 'container'>
+			<h2>Get Data</h2>
+			<form>	
+				<div>
+					<label for = 'fileInput'>
+						<p>Input File</p>
+						<input 
+							type = 'file' 
+							name = 'file'
+							id = 'fileInput'
+						/>
+					</label>
+				</div>
+				<button>Get Data</button>
+			</form>
+		</div>
+	</body>
+	<script defer = "">
+		const form = document.forms[0];
+		const fileInput = document.querySelector('label');
+		fileInput.addEventListener('change',() => {
+			fileInput.children[0].textContent = form.file.files[0].name;
+		});
+		form.addEventListener('submit',(e) => {
+			e.preventDefault();
+			if(document.querySelector('audio')){
+				document.body.removeChild(document.querySelector('audio'));
+			}
+			let fileReader = new FileReader();
+			fileReader.readAsDataURL(form.file.files[0]);
+			fileReader.addEventListener("load",(e) => {
+				const audio = new Audio(e.target.result);
+				audio.setAttribute('controls','');
+				document.body.appendChild(audio);
+				audio.play();
+			});
+		});
+	</script>
+</html>
